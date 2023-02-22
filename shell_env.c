@@ -14,7 +14,7 @@ int shell_exit(void)
 int shell_env(void)
 {
 	unsigned int i = 0;
-	
+
 	while (environ[i] != NULL)
 	{
 		write(STDOUT_FILENO, environ[i], _strlen(environ[i]));
